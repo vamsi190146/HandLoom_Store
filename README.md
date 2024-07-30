@@ -13,7 +13,11 @@ Welcome to the Handloom Store project! This web application connects vendors and
 - **SQL**: For managing and querying the database.
 - **MySQL Workbench**: For database design and management.
 - **HTML/CSS/Bootstrap**: For frontend development and styling.
+LOGIN PAGE
+![Handloom Store](https://github.com/vamsi190146/HandLoom_Store/blob/main/images/Screenshot%202024-07-30%20165525.png)
 
+REGISTRATION PAGE:
+![Handloom Store](https://github.com/vamsi190146/HandLoom_Store/blob/main/images/Screenshot%202024-07-30%20165541.png)
 ## Features
 
 - **Vendor Management**: Vendors can list and manage their handloom products.
@@ -25,8 +29,6 @@ Welcome to the Handloom Store project! This web application connects vendors and
 To set up and run the Handloom Store locally, follow these steps:
 
 1. **Clone the Repository**
-
-   ```bash
 git clone https://github.com/yourusername/handloom-store.git
 cd handloom-store
 Set Up the Database
