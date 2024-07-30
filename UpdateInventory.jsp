@@ -19,8 +19,8 @@ Connection conn=null;
 PreparedStatement ps=null;
 String query="update inventory set quantity=quantity+? where sid=? and pid=?";
 try{
-	Class.forName("com.mysql.jdbc.Driver");
-	conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/drugdatabase","root","1234");
+	Class.forName("com.mysql.cj.jdbc.Driver");
+        conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql","root","Tvamsi152@");
 	ps=conn.prepareStatement(query);
 	ps.setInt(1,qt);
 	ps.setString(2,guid);

@@ -25,8 +25,8 @@
 		String query2="INSERT INTO seller(sid,pass,sname,address,phno) VALUES(?,?,?,?,?)";
 		ResultSet rs=null;
 		try{		
-			Class.forName("com.mysql.jdbc.Driver");
-			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/drugdatabase","root","1234");
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql","root","Tvamsi152@");
 			ps1=conn.prepareStatement(query1);
 			ps1.setString(1,uid1);
 			rs=ps1.executeQuery();

@@ -45,8 +45,8 @@
 	String query="select p.pname,p.pid,p.manufacturer,p.mfg,p.price,i.quantity from product p,inventory i where p.pid=i.pid";
 	
 	try{
-		Class.forName("com.mysql.jdbc.Driver");
-		conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/drugdatabase","root","1234");
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql","root","Tvamsi152@");
 		ps=conn.prepareStatement(query);
 		rs=ps.executeQuery();
 		%><div class="filler2"></div>
@@ -65,7 +65,7 @@
 			<div class="row">
  				<div class="column">
     				<div class="card">
-    				<img src="images/pills.png" width=180 height=200>
+    				<img src="images/prod.jpg" width=180 height=200>
   					<h1><%=rs.getString("pname") %></h1>
   					<p><b>ID: </b><%=rs.getString("pid") %></p>
 					<p><b>Manufacturer: </b><%=rs.getString("manufacturer") %></p>
@@ -76,7 +76,7 @@
 					{
 					%>
   					<form action="PlaceOrder.jsp" method="post">
-  					<input type="number" name="orderquantity" onkeypress="return event.charCode>= 48 && event.charCode<= 57" placeholder="Enter quantity" max="<%=rs.getInt("quantity") %>" required >
+  					<input type="number"  name="orderquantity" onkeypress="return event.charCode>= 48 && event.charCode<= 57" placeholder="Enter quantity" max="<%=rs.getInt("quantity") %>" required >
   					<input type="hidden" name="pid" value="<%=rs.getString("pid") %>">
   					<p></p>
   					<button>Buy</button></form></div>

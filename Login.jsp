@@ -22,11 +22,11 @@
 		Connection conn=null;
 		PreparedStatement ps=null;
 
-		String query2="SELECT sid,pass from Seller WHERE sid=?";
+		String query2="SELECT sid,pass from seller WHERE sid=?";
 		String query1="SELECT uid,pass from customer WHERE uid=?";
 		try{
-		Class.forName("com.mysql.jdbc.Driver");
-		conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/drugdatabase","root","1234");
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql","root","Tvamsi152@");
 		if(u==2)
 		{ 
 			ps=conn.prepareStatement(query2);
