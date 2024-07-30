@@ -13,8 +13,11 @@ Welcome to the Handloom Store project! This web application connects vendors and
 - **SQL**: For managing and querying the database.
 - **MySQL Workbench**: For database design and management.
 - **HTML/CSS/Bootstrap**: For frontend development and styling.
+ =====================================================================
 LOGIN PAGE
 ![Handloom Store](https://github.com/vamsi190146/HandLoom_Store/blob/main/images/Screenshot%202024-07-30%20165525.png)
+
+=====================================================================
 
 REGISTRATION PAGE:
 ![Handloom Store](https://github.com/vamsi190146/HandLoom_Store/blob/main/images/Screenshot%202024-07-30%20165541.png)
